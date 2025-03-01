@@ -2,3 +2,45 @@
 
 **PREDICTIVE ANALYSIS PYTHON**
 
+Task 2: Predictive Analysis (Regression)
+# Assuming we predict 'Score' (a numerical value) based on 'HelpfulnessNumerator' and 'HelpfulnessDenominator'
+print("\n--- Task 2: Predictive Analysis ---")
+--- Task 2: Predictive Analysis ---
+# Select relevant columns for prediction
+predictive_df = aggregated_data[['HelpfulnessNumerator', 'HelpfulnessDenominator', 'Score']].dropna()
+X = predictive_df[['HelpfulnessNumerator', 'HelpfulnessDenominator']]
+y = predictive_df['Score']
+print("successful")
+successful
+# Split data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+print("successful")
+successful
+# Train a Linear Regression model
+model = LinearRegression()
+model.fit(X_train, y_train)
+print("successful")
+successful
+# Make predictions
+y_pred = model.predict(X_test)
+print("successful")
+successful
+# Evaluate the model
+mse = mean_squared_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+print(f"Mean Squared Error: {mse}")
+print(f"R-squared: {r2}")
+print("successful")
+Mean Squared Error: 1.5448622811108321
+R-squared: 0.0927285599830443
+successful
+# Visualize actual vs predicted
+plt.scatter(y_test, y_pred)
+plt.xlabel('Actual Scores')
+plt.ylabel('Predicted Scores')
+plt.title('Actual vs Predicted Scores')
+plt.show()
+"load"
+
+'load'
+
