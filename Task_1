@@ -10,6 +10,9 @@ plt.xlabel('Text Length')
 plt.ylabel('Frequency')
 plt.show()
 
+![Image](https://github.com/user-attachments/assets/625147e6-7584-42c7-ade3-005926481ddd)
+
+
 # Example analysis: Helpfulness Ratio Distribution
 plt.figure(figsize=(10, 6))
 sns.boxplot(x='Score', y='HelpfulnessRatio', data=aggregated_data)
@@ -17,6 +20,8 @@ plt.title('Helpfulness Ratio by Score')
 plt.xlabel('Score')
 plt.ylabel('Helpfulness Ratio')
 plt.show()
+
+![Image](https://github.com/user-attachments/assets/1bbb52df-28e0-4d03-a31e-ea1b89c55b1a)
 
 # Save processed data to a new CSV file for further use
 processed_file_path = 'Processed_Reviews.csv'
