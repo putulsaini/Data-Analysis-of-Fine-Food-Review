@@ -2,3 +2,49 @@
 
 **SENTIMENT ANALYSIS**
 
+
+Task 4: Sentiment Analysis
+# Consider 'Text' for reviews and 'Score' for sentiment (positive: Score >= 4, negative: Score <= 2)
+sentiment_df = aggregated_data[['Text', 'Score']].dropna()
+sentiment_df['Sentiment'] = sentiment_df['Score'].apply(lambda x: 'positive' if x >= 4 else ('negative' if x <= 2 else 'neutral'))
+sentiment_df = sentiment_df[sentiment_df['Sentiment'] != 'neutral']  # Remove neutral for binary classification
+print("successful")
+successful
+# Prepare data for text vectorization
+X_text = sentiment_df['Text']
+y_sentiment = sentiment_df['Sentiment']
+print("successful")
+successful
+# Convert text to numerical features using CountVectorizer
+vectorizer = CountVectorizer(stop_words='english', max_features=5000)
+X_text_vectorized = vectorizer.fit_transform(X_text)
+print("successful")
+successful
+# Split data into training and testing sets
+X_train_text, X_test_text, y_train_sentiment, y_test_sentiment = train_test_split(X_text_vectorized, y_sentiment, test_size=0.2, random_state=42)
+print("successful")
+successful
+# Train a Naive Bayes model
+nb_model = MultinomialNB()
+nb_model.fit(X_train_text, y_train_sentiment)
+print("successful")
+successful
+# Make predictions
+y_pred_sentiment = nb_model.predict(X_test_text)
+print("successful")
+successful
+# Evaluate the model
+print("Classification Report:\n", classification_report(y_test_sentiment, y_pred_sentiment))
+print("successful")
+Classification Report:
+               precision    recall  f1-score   support
+
+    negative       0.68      0.71      0.69     16379
+    positive       0.95      0.94      0.94     88784
+
+    accuracy                           0.90    105163
+   macro avg       0.81      0.82      0.82    105163
+weighted avg       0.90      0.90      0.90    105163
+
+successful
+
