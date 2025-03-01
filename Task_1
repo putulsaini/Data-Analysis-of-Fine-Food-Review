@@ -1,3 +1,26 @@
 ## TASK -1
 **BIG DATA ANALYSIS**
 
+Task 1: Big Data Analysis
+# Example analysis: Distribution of Text Length
+plt.figure(figsize=(10, 6))
+sns.histplot(aggregated_data['TextLength'], bins=50, kde=True, color='blue')
+plt.title('Distribution of Review Text Length')
+plt.xlabel('Text Length')
+plt.ylabel('Frequency')
+plt.show()
+
+# Example analysis: Helpfulness Ratio Distribution
+plt.figure(figsize=(10, 6))
+sns.boxplot(x='Score', y='HelpfulnessRatio', data=aggregated_data)
+plt.title('Helpfulness Ratio by Score')
+plt.xlabel('Score')
+plt.ylabel('Helpfulness Ratio')
+plt.show()
+
+# Save processed data to a new CSV file for further use
+processed_file_path = 'Processed_Reviews.csv'
+aggregated_data.to_csv(processed_file_path, index=False)
+print(f"Processed data saved to {processed_file_path}")
+Processed data saved to Processed_Reviews.csv
+
