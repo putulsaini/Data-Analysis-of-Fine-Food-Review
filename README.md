@@ -12,5 +12,5 @@
 
 *MENTOR* : NEELA SANTOSH
 
-
+Dataset link : https://www.kaggle.com/code/mojganb/amazon-fine-food-lstm/input
 
