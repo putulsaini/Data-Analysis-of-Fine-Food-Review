@@ -14,7 +14,10 @@
 
 Dataset link : https://www.kaggle.com/code/mojganb/amazon-fine-food-lstm/input
 
-📌 Objective of the Amazon Fine Food Review Analysis Project
+![Image](https://github.com/user-attachments/assets/f60fd920-a813-43ed-9053-861bd3e21e63)
+
+
+📌 ***Objective of the Amazon Fine Food Review Analysis Project***
 
 * The main objective of this project is to analyze customer reviews of food products on Amazon to gain actionable insights for business decision-making.
 
