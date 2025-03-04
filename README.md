@@ -14,6 +14,8 @@
 
 Dataset link : https://www.kaggle.com/code/mojganb/amazon-fine-food-lstm/input
 
+Power BI Dashboard link: https://drive.google.com/file/d/1QubMBNvUXmcA58VNEeN5byE5Z_rsKhPu/view?usp=drive_link
+
 ![Image](https://github.com/user-attachments/assets/f60fd920-a813-43ed-9053-861bd3e21e63)
 
 
